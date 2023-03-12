@@ -4,7 +4,7 @@
 # demonstrates how to use a function to adds 2 tuples
 #
 # (C) 2022 uche102, Lagos, Nigeria
-# email inwakoruche192@gmail.com
+# email nwakoruche192@gmail.com
 # -----------------------------------------------------------
 
 
