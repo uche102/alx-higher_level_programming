@@ -1,13 +1,14 @@
 #!/usr/bin/python3
-"""displays the value of the X-Request-Id variable found in
-the header of the response.
 """
+script that fetches https://alx-intranet.hbtn.io/status.
+"""
+import requests
 
 
 if __name__ == "__main__":
-    from requests import get
-
-    html = get('https://alx-intranet.hbtn.io/status')
+    url = "https://alx-intranet.hbtn.io/status"
+    response = requests.get(url)
+    content = response.text
     print('Body response:')
-    print("\t- type: {}".format(html.text.__class__))
-    print("\t- content: {}".format(html.text))
+    print('\t- type: {}'.format(type(content)))
+    print('\t- content: {}'.format(content))
